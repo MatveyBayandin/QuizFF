@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Neucha;
+    font-size: 35px;
+}
+
+html,
+body {
+    height: 100%;
+    background: #FBD28E;
+}
+
+.header {
+    background: #F1B032;
+    height: 65px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a>h2 {
+    font-family: Pacifico;
+    font-size: 28px;
+    color: white;
+}
+
+
+.header-logo,
+.header-bnt {
+    margin: auto 25px;
+    cursor: pointer;
+
+}
+
+.btn1,
+.btn2 {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    background: #FDA908;
+    border: 2px solid #fff2db;
+    color: #fff2db;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn2 {
+    width: 155px;
+
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    position: relative;
+}
+
+.content {
+    margin-top: 95px;
+}
+
+.content-zagolovok>h1 {
+    text-align: center;
+    color: #f19d00;
+    font-size: 75px;
+}
+
+.content-image {
+    margin-top: 80px;
+}
+
+.content-image-box>img {
+    width: 590px;
+}
+
+.content-image-box {
+    width: 590px;
+    margin: auto;
+}
+
+.content-text {
+    margin: 45px 150px;
+    text-align: center;
+    color: #ffa600;
+    text-shadow: 2px 2px 3px #724a00;
+}
+
+.content-button-start {
+    text-align: center;
+}
+
+.content-button-start>button {
+    width: 200px;
+    height: 55px;
+    border-radius: 10px;
+    background: #fff2db;
+    border: 5px solid #FDA908;
+    color: #FDA908;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    margin-bottom: 100px;
+
+}
+
+.popub-bg-login,
+.popub-bg-register,
+.popub-bg-Soglasie {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    text-align: center;
+}
+
+.popub {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    background: #FBD28E;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    padding-top: 60px;
+    border-radius: 15px;
+
+}
+
+.close-popub-LOG,
+.close-popub-REG {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.popub-log-h2 {
+    font-size: 53px;
+    margin-bottom: 45px;
+}
+
+.popub>input,
+p {
+    margin-bottom: 25px;
+}
+
+.popub-log-bnts {
+    margin: 50px 0;
+}
+
+.header-User {
+    display: flex;
+    height: 100%;
+}
+
+.header-User>p {
+    margin: auto 0;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.header-UserIcon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: auto 0;
+}
+
+
+.BodyUserSidebar {
+    margin: 0;
+    background-color: #f1b13283;
+    width: 350px;
+    height: 400px;
+    border-radius: 0 0 25px 25px;
+    position: absolute;
+    left: 45px;
+}
+
+.BodyUserSidebar-btn {
+    position: absolute;
+    width: 300px;
+    margin: 0 auto;
+    left: 25px;
+}
+
+.BodyUserSidebar-btn>ul {
+    list-style: none;
+    padding: 0;
+}
+
+.BodyUserSidebar-btn>ul>li {
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.BodyUserSidebar-btn>ul>li>button {
+    width: 300px;
+    height: 55px;
+    border: 5px solid #FDA908;
+    border-radius: 15px;
+    color: #F1B032;
+    cursor: pointer;
+}
+
+
+.body-User-content-interface {
+    width: 895px;
+    border: 1px solid black;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+.body-User-content-interface-create input,
+.NameNewTest>input,
+.NewTest-Quest1-name>input,
+.NewTest-Quest2-name>input,
+.NewTest-Quest3-name>input,
+.NewTest-Quest4-name>input,
+.NewTest-Quest5-name>input,
+.NewTest-Quest1_answer>.input-answer,
+.NewTest-Quest2_answer>.input-answer,
+.NewTest-Quest3_answer>.input-answer,
+.NewTest-Quest4_answer>.input-answer,
+.NewTest-Quest5_answer>.input-answer
+{
+    background-color: #f19d00;
+    color: #fff2db;
+    background-color: #f19d00;
+    color: #fff2db;
+    width: 400px;
+    height: 70px;
+    border: 0;
+    border-radius: 50px;
+    margin: 35px auto;
+    box-shadow: 0 0 5px 5px rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.NameNewTest>input {
+    border-radius: 20px;
+    width: 700px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.NameNewTest>input::placeholder,
+.NewTest-Quest1-name>input::placeholder,
+.NewTest-Quest2-name>input::placeholder,
+.NewTest-Quest3-name>input::placeholder,
+.NewTest-Quest4-name>input::placeholder,
+.NewTest-Quest5-name>input::placeholder {
+    color: #fff2db;
+    position: absolute;
+    top: 0px;
+    opacity: 0.5;
+}
+
+.TestName-button {
+    display: block;
+    margin: 50px;
+    width: 770px;
+    padding: 15px 0;
+    background-color: #f19d00;
+    color: #fff2db;
+    /* padding: 10px 230px; */
+    border: 0;
+    border-radius: 50px;
+    margin: 25px auto;
+    box-shadow: 0 0 5px 5px rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+
+}
+
+
+.body-User-content-interface-tests-autor > p{
+    margin: 0 auto;
+    border-top: 3px solid rgb(241, 173, 70);
+    border-radius: 15%;
+    width: 700px;
+    font-size: 25px;
+    padding-top: 5px;
+}
+.TestName-radiobutton{
+    display: none;
+}
+
+.NewTest-Quest1-name input,
+.NewTest-Quest2-name input,
+.NewTest-Quest3-name input,
+.NewTest-Quest4-name input,
+.NewTest-Quest5-name input {
+    font-size: 30px;
+    border-radius: 20px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+}
+
+.NewTest-Quest1-answers,
+.NewTest-Quest2-answers,
+.NewTest-Quest3-answers,
+.NewTest-Quest4-answers,
+.NewTest-Quest5-answers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.NewTest-Quest1_answer>.input-answer,
+.NewTest-Quest2_answer>.input-answer,
+.NewTest-Quest3_answer>.input-answer,
+.NewTest-Quest4_answer>.input-answer,
+.NewTest-Quest5_answer>.input-answer {
+    width: 300px;
+    height: 50px;
+    background-color: #F1B032;
+    margin: 20px 10px;
+}
+
+.NewTest-buttonSave {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.NewTest-buttonSave input {
+    width: 300px;
+    height: 65px;
+    background-color: #f19d00;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.label-answer{
+    display: block;
+    width: 400px;
+    height: 50px;
+    background-color: #f19d00;
+    text-align: center;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.Test-Quest_answers{
+    display: flex;
+}
+
+.Test-Quest1-answers{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.Test-Quest1-answers-Flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.testContentmag{
+text-align: center;}
+
+.prosholtect{
+    margin-top: 80px;
+    font-size: 70px;
+    color: #F1B032;
+}
+
+.Big_procent{
+    font-size: 150px;
+    color: #F1B032;
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+
+.ssilka-save{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 45px;
+    background-color: #F1B032;
+    border: 5px solid #f19d00;
+    border-radius: 5px;
+}
